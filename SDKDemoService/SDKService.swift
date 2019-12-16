@@ -1,20 +1,21 @@
 //
-//  SDKDemoService.swift
+//  SDKService.swift
 //  SDKDemoService
 //
 //  Created by Hari_Vrinda on 12/16/19.
 //  Copyright © 2019 Hari_Vrinda. All rights reserved.
 //
 
-let Services = SDKDemoService.instance
+
+//public let Service1 = SDKService.instance
 
 import Foundation
 
-class SDKDemoService {
+class SDKService {
     
-    static let instance = SDKDemoService()
+    public static let instance = SDKService()
     
-    func callPOST(url urlString:String, params: [String: Any], completion: (Result<String, Error>) -> Void?) {
+    public func callPOST1(url urlString:String, params: [String: Any], completion: (Result<String, Error>) -> Void?) {
         guard let endpointUrl = URL(string: urlString) else { return }
         do {
             let data = try JSONSerialization.data(withJSONObject: params, options: [])
