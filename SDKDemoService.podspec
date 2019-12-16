@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SDKDemoService"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A CocoaPods library written in Swift for get the mobile validation for credits."
 
   # This description is used to generate tags and improve search results.
@@ -68,7 +68,7 @@ This Cocoapods library helps you perform the validation of credits to the partic
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-   spec.ios.deployment_target = "12.1"
+   spec.ios.deployment_target = "9.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
