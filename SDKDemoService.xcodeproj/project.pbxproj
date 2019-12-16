@@ -13,6 +13,7 @@
 		5D39201823A78DD1007B4F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D39201623A78DD1007B4F50 /* Main.storyboard */; };
 		5D39201A23A78DDC007B4F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D39201923A78DDC007B4F50 /* Assets.xcassets */; };
 		5D39201D23A78DDC007B4F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D39201B23A78DDC007B4F50 /* LaunchScreen.storyboard */; };
+		5D39202323A79693007B4F50 /* SDKDemoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D39202223A79693007B4F50 /* SDKDemoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5D39201923A78DDC007B4F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D39201C23A78DDC007B4F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D39201E23A78DDC007B4F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D39202223A79693007B4F50 /* SDKDemoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKDemoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				5D39200423A78D1A007B4F50 /* SDKDemoService.h */,
 				5D39200523A78D1A007B4F50 /* Info.plist */,
+				5D39202223A79693007B4F50 /* SDKDemoService.swift */,
 			);
 			path = SDKDemoService;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					5D39200023A78D1A007B4F50 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					5D39200F23A78DD1007B4F50 = {
 						CreatedOnToolsVersion = 10.3;
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D39202323A79693007B4F50 /* SDKDemoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +361,7 @@
 		5D39200A23A78D1A007B4F50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -373,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.city.SDKDemoService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +388,7 @@
 		5D39200B23A78D1A007B4F50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
