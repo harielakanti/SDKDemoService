@@ -6,15 +6,15 @@
 //  Copyright © 2019 Hari_Vrinda. All rights reserved.
 //
 
-let Services = SDKDemoService.instance
+public let Services = SDKDemoService.instance
 
 import Foundation
 
-class SDKDemoService {
+public class SDKDemoService {
     
-    static let instance = SDKDemoService()
+    public static let instance = SDKDemoService()
     
-    func callPOST(url urlString:String, params: [String: Any], completion: (Result<String, Error>) -> Void?) {
+    public func callPOST(url urlString:String, params: [String: Any], completion: (Result<String, Error>) -> Void?) {
         guard let endpointUrl = URL(string: urlString) else { return }
         do {
             let data = try JSONSerialization.data(withJSONObject: params, options: [])
@@ -54,6 +54,7 @@ class SDKDemoService {
     
     
 }
+
 
 
 

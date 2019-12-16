@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SDKDemoService"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A CocoaPods library written in Swift for get the mobile validation for credits."
 
   # This description is used to generate tags and improve search results.
